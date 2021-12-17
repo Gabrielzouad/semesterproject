@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+}
+
+p,
+a {
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (min-width: 0px) {
+  /* Heading*/
+  .navbar {
+    position: relative;
+    width: 100%;
+  }
+
+  .navbar img {
+    width: 100px;
+    position: relative;
+    display: block;
+    margin: auto;
+    padding-bottom: -50px;
+  }
+  .nav-menu a {
+    color: black;
+    font-size: 5 em;
+    text-decoration: none;
+    display: inline;
+    padding: 20px;
+  }
+  .nav-menu a:hover {
+    font-weight: bold;
+  }
+  .nav-menu {
+    text-align: center;
+    padding: 0;
+  }
+  .nav-menu li {
+    display: inline;
+  }
+
+  .site-info img {
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .site-info {
+    text-align: center;
+  }
+
+  .site-info p {
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .openings img {
+    max-width: 200px;
+  }
+  .openings {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .openings li {
+    font-family: "Oswald" sans-serif;
+  }
+  .openinginfo ul {
+    list-style: none;
+  }
+
+  .additional {
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+  }
+  .additional div {
+    margin: 50px;
+  }
+  .additional h2 {
+    text-transform: uppercase;
+  }
+  /*footer*/
+
+  .sosiale {
+    background-color: #e6d6b5;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-menu li {
+    display: inline;
+    width: 100%;
+    padding: 20px;
+  }
+  .footer-menu {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-menu img {
+    width: 50px;
+  }
+
+  .privateinfo {
+    font-family: "Oswald", sans-serif;
+  }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = {
+          lat: 61.124776,
+          lng: 10.452987,
+        };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(
+          document.getElementById(
+            "map"
+          ),
+          {
+            zoom: 15,
+            center: uluru,
+          }
+        );
+        // The marker, positioned at Uluru
+        const marker =
+          new google.maps.Marker({
+            position: uluru,
+            map: map,
+          });
+      }
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html"
+          ><img
+            src="bilder/icon-1719742.svg"
+            alt="logo"
+        /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a
+              href="events.html"
+              class="nav-text"
+              >Events</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="booking.html"
+              class="nav-text"
+              >Booking</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="informasjon.html"
+              class="nav-text"
+              >Informasjon</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="eksperimenter.html"
+              class="nav-text"
+              >Eksperimenter</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero-page">
+      <h1>Community Science Museum</h1>
+      <h2>Utforsk sammen</h2>
+
+      <img
+        src="bilder/samuel-zeller-113381-min.png"
+        alt="anatomi av menneskekroppen"
+      />
+      <div class="hero-button">
+        <a href="#informasjon"
+          >Utforsk</a
+        >
+      </div>
+    </div>
+
+    <section id="informasjon">
+      <h2>
+        Bli med oss på Community Science
+        Museum hvor vi er forpliktet til
+        å gjøre vitenskap tilgjengelig
+        for alle.
+      </h2>
+      <p>
+        I løpet av menneskehetens
+        historie har vitenskapen
+        utviklet seg fra vår tidlige
+        forståelse av ild , vind, vann
+        og jord til å utforske alt fra
+        galakser langt borte til selve
+        byggesteinene i selve livet.
+      </p>
+
+      <p>
+        Målet med museet vårt er å skape
+        et rom hvor alle kan oppleve
+        underverkene ved våre
+        oppdagelser og kanskje til og
+        med tenne en livslang lidenskap
+        for å fortsette utforskningen av
+        verden rundt oss.
+      </p>
+
+      <p>
+        Vi mener at vitenskap ikke bør
+        begrenses til læreboken, men
+        bringes til live gjennom
+        utstillinger . Dette er grunnen
+        til at vi har over 1000
+        forskjellige utstillinger om de
+        mange varierte fagene innen
+        vitenskap å utforske.
+      </p>
+
+      <img
+        class="labbilde"
+        src="bilder/lab-512503_1920.jpg"
+        alt="bilde av lab eksperiment "
+      />
+    </section>
+
+    <section class="event">
+      <h2>Våre events</h2>
+      <div class="collage">
+        <img
+          src="bilder/Group 41.png"
+          alt="collage av vitenskapsbilder"
+        />
+      </div>
+      <p>
+        Planlegger dere å arrangere et
+        kick-off eller lignende? Trenger
+        dere en morsom samling der dere
+        blir kjent med nye sider av
+        hverandre?
+      </p>
+      <div class="hero-button">
+        <a href="events.html"
+          >Utforsk</a
+        >
+      </div>
+    </section>
+
+    <div class="sted">
+      <h2>Kom besøk oss</h2>
+      <h3>Gausdalsgata 160</h3>
+      <h3>Lillehammer</h3>
+      <div id="map"></div>
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANM67FJPGyythE-4ylGdPGXI-p2YN0eYc&callback=initMap&libraries=&v=weekly"
+        async
+      ></script>
+    </div>
+
+    <footer class="sosiale">
+      <ul class="footer-menu">
+        <li>
+          <img
+            src="bilder/Group 8.png"
+            alt="sosials"
+          />
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="bilder/Group 19.png"
+              alt="instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="bilder/Group 28.png"
+              alt="facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="bilder/Group 37.png"
+              alt="snapchat"
+          /></a>
+        </li>
+        <li class="privateinfo">
+          +47 47653911
+        </li>
+        <li class="privateinfo">
+          COMMUNITYSCIENCE@MUSEUM.NO
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
